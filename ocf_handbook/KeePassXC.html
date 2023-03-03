@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./picture/icon_white.png" />
+    <link rel="stylesheet" href="./style/otherPage.css" />
+    <title>推廣手冊</title>
+  </head>
+  <body>
+    <section class="backImage">
+      <a href="https://ocf.tw/"
+        ><img class="logo" src="./picture/icon_white.png" alt=""
+      /></a>
+      <div class="typewriter">
+        <h1>安全保管所有密碼：KeePassXC</h1>
+      </div>
+    </section>
+    <main>
+      <div class="goback-div">
+        <a href="./index.html" class="backhome"> 返回主頁</a>
+      </div>
+      <section class="start">
+        <section class="left">
+          <h3 id="使用情境_KeePassXC">使用情境</h3>
+          <hr />
+          <ul class="left">
+            <li>取代瀏覽器內建密碼管理器</li>
+            <p>
+              如同將不同功能的事情、交給不同瀏覽器處理的分隔原則，本文也建議只將密碼交給獨立運作的密碼管理器，避免與瀏覽器的直接關聯，減少雞蛋集中在籃子裡的風險。這雖然會減損一點便利，但是
+              KeepassXC
+              已經提供直接複製帳號名稱、密碼的功能，使用者還是可以省去大量輸入帳密的時間。
+            </p>
+            <!-- <img src="./picture/autoInput.png" alt="" /> -->
+            <li>密碼真的又多又雜</li>
+            <img src="./picture/key.svg" alt="" />
+            <li>無法自己記住每一個密碼，直接交給管理器更簡單</li>
+            <img src="./picture/key2.svg" alt="" />
+          </ul>
+        </section>
+        <section class="right">
+          <ul class="right">
+            <li>
+              <a href="#一次保管所有的密碼：KeePassXC 密碼管理器"
+                >一次保管所有密碼：KeePassXC 密碼管理器</a
+              >
+
+              <ul>
+                <li><a href="#使用情境_KeePassXC">使用情境</a></li>
+                <li><a href="#下載／安裝流程_KeePassXC">下載/安裝流程</a></li>
+                <li><a href="#開始使用">開始使用</a></li>
+                <li>
+                  <a href="#在新電腦或是其他裝置上設定_KeePassXC"
+                    >在新電腦或是其他裝置上設定</a
+                  >
+                </li>
+                <li>
+                  <a href="#技術支援／求救方法_KeePassXC">技術支援/求救方法</a>
+                </li>
+                <li><a href="#結語">結語</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="start">
+        <section class="left">
+          <h3 id="下載／安裝流程_KeePassXC">下載/安裝流程</h3>
+          <hr />
+          <ul class="left">
+            <li>
+              在電腦安裝
+              <p>
+                切記，下載工具程式務必要從官方網站下載，以避免下載到來路不明、被暗藏後門的軟體。KeePassXC
+                的官方網站是
+                <a href="https://keepassxc.org/">https://keepassxc.org/</a>
+                ，在首頁就可以看見下載的連結，選擇你的電腦作業系統下載即可。記得，KeePassXC
+                與其它商業密碼管理器不同，是免費提供下載的，如果你發現要註冊、付費，那就肯定搞錯軟體了。
+              </p>
+              <img src="./picture/keypass.svg" alt="" />
+            </li>
+            <li>
+              在手機或平板安裝
+              <p>
+                如果你想安裝 Android 或 iOS
+                （蘋果）的版本，它們跟電腦版本的名稱不一樣。官方網站的指引
+                <a href="https://keepassxc.org/docs/"
+                  >https://keepassxc.org/docs/</a
+                >建議在 Android 使用
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free"
+                  >KeePassDX</a
+                >and
+                <a
+                  href="https://play.google.com/store/apps/details?id=keepass2android.keepass2android"
+                >
+                  KeePass2Android</a
+                >，在 iOS 則是
+                <a
+                  href="https://itunes.apple.com/us/app/strongbox-password-safe/id897283731"
+                  >Strongbox</a
+                >and
+                <a
+                  href="https://apps.apple.com/us/app/keepassium-keepass-passwords/id1435127111"
+                  >KeePassium</a
+                >。他們都是 KeePass
+                家族的成員，所以可以互通使用，管理密碼的方式也相近。但是本文後續以介紹電腦裝置上面的
+                KeePassXC 為主。
+              </p>
+            </li>
+          </ul>
+
+          <h3>首次設定</h3>
+          <hr />
+          <ol class="left">
+            <li>為新的密碼資料庫命名，可以加上描述，以免自己遺忘內容</li>
+            <img src="./picture/set_keyword.svg" alt="" />
+            <li>
+              為這個資料庫提高加密層級，這可以阻礙有人將資料庫檔案盜走後的解密工作，提高他們需要解鎖的時間成本
+            </li>
+            <img src="./picture/set_keyword2.svg" alt="" />
+            <li>
+              為這個資料庫設定<strong style="font-size: 1.2rem">主要密碼</strong
+              >，可以說是最重要的事情，如果遺忘主要密碼，裡面的東西就再也無法取出
+            </li>
+            <img src="./picture/set_keyword3.svg" alt="" />
+          </ol>
+
+          <h3 id="開始使用">開始使用</h3>
+          <hr />
+          <ol class="left">
+            <li>
+              首頁裏頭條列各個帳號的管理項目，點擊要尋找密碼的帳號，就可以觀看或準備複製貼上密碼
+            </li>
+            <img src="./picture/copy_keyword.svg" alt="" />
+            <li>
+              如果要新增某個網站或服務的帳號密碼，就要到工具列「新建項目」：
+              <br />
+              <br />
+              <img src="./picture/add_keyword.svg" alt="" />
+              <ol class="en">
+                <li>輸入標題（例如某購物網站）</li>
+                <li>使用者名稱（也就是你在該服務註冊的帳號）之後，</li>
+                <li>產生新的密碼。可以自行輸入，也可以隨機產生</li>
+                <img src="./picture/randomkey.svg" alt="" />
+              </ol>
+            </li>
+            <li>
+              也是在工具列「編輯項目」：更改項目的標題、使用者名稱、修改密碼
+            </li>
+            <li>最後則是工具列的「刪除項目」：可以將所選的項目刪去</li>
+            <li>
+              如果需要修改 KeePassXC
+              的設定，可以到工具列的最後一個「設定」進行：
+              <ol class="en">
+                <li>例如在「通用」的地方可以設定開機後可以啟動管理器</li>
+                <li>
+                  或是在「安全」的地方設定複製密碼之後自動消除的時間，可以避免使用者不小心在公開的聊天訊息貼上自己的密碼。
+                </li>
+                <li>
+                  想在瀏覽器裡面直接連結密碼管理器，可以到「瀏覽器整合」為
+                  Firefox, Google Chrome, Brave, Edge
+                  等等主流的瀏覽器下載並安裝外掛。這可以讓你直接在瀏覽器裡面複製貼上密碼。
+                </li>
+              </ol>
+            </li>
+          </ol>
+          <h3 id="在新電腦或是其他裝置上設定_KeePassXC">
+            在新電腦或是其他裝置上設定
+          </h3>
+          <hr />
+          <ol class="left">
+            <li>
+              換了新的電腦，要繼續用
+              KeePassXC，就要記得搬遷資料庫到新電腦裡面，也就是那個副檔名為
+              .kdbx 的檔案。
+            </li>
+            <li>
+              在新的電腦安裝 KeePassXC
+              之後，在初次開啟時選擇「開啟現有資料庫」。
+            </li>
+            <li>
+              輸入你原先為這個資料庫設定的<strong style="font-size: 1.2rem"
+                >主要密碼</strong
+              >，即可開啟使用。
+            </li>
+          </ol>
+          <h3 id="技術支援／求救方法_KeePassXC">技術支援/求救方法</h3>
+          <hr />
+          <p>
+            如果你希望再加一道主要密碼以外的保護措施，確保即使你的整台電腦被盜走，也沒有機會開啟密碼資料庫。那麼可以考慮使用
+            <a href="https://zh.wikipedia.org/zh-tw/YubiKey"> YubiKey </a
+            >這樣的物理保護措施當作第二層鎖（也就是「二階段驗證」的概念），它就如同實體的鑰匙一樣，外型跟一個
+            USB 隨身碟長得很像，只能在實體插入、手動接上電腦時候解鎖打開
+            KeepassXC 密碼庫。<strong style="font-size: 1.2rem; color: red"
+              >但使用者必須自行負擔另外購買這個裝置的價格，而且遺失裝置的話，就會沒有任何機會打開密碼庫了。</strong
+            >
+          </p>
+          <p>
+            KeePassXC
+            有相當多樣的功能，甚至可以跨裝置到手機、平板共用，網路上已經有相關的教學，例如
+            <a href="https://ithelp.ithome.com.tw/articles/10226300"
+              >開源密碼管理軟體：KeePass</a
+            >
+            或
+            <a href="https://www.playpcesor.com/2020/07/keepassxc.html"
+              >KeePassXC
+              免費密碼管理軟體圖解教學，信用卡、瀏覽器、手機都能快速輸入</a
+            >
+
+            ，於此不再贅述。不過，跨裝置使用代表你要四處搬遷密碼資料庫，甚至將資料庫上傳到雲端硬碟空間。如果你會擔心搬遷過程遺失、出現無法預料的問題，或是存放的網路空間遭竊，請慎選跨平台的功能。
+          </p>
+          <p>
+            如果對本文的介紹有任何疑義，可以閱讀我們以前寫過的
+            <a
+              href="https://ocftw.github.io/ssd.eff.org/zh_TW/module/how-use-keepassx.html"
+              >如何使用 KeePassXC | 監控自我防衛</a
+            >
+            ​，或是聯繫
+            <a href="mailto:hi@ocf.tw">hi@ocf.tw</a> 開放文化基金會詢問。
+          </p>
+          <h3 id="結語">結語</h3>
+          <hr />
+          <p>
+            在數位時代生活，密碼就如同鑰匙，保障每個人的各項資料。但也同時是駭客覬覦的重要目標，只要取得密碼，就能夠冒用身份、盜刷財務、竊取遊戲內的虛擬寶物，對生活造成大大小小的損害。
+            何況是身為捍衛人權的公民團體，如果帳號密碼為駭客所知，那恐怕就不只有一個人的生活遭殃，有可能導致組織名譽受損、重要的行動資訊洩露，甚至被極權國家鎖定人身資訊，有生命威脅之虞。
+          </p>
+          <p>
+            本文所介紹的KeePassXC源自開放原始碼軟體改良而成，KeePassXC
+            與市面上販售的商業密碼管理器不同，是由網路社群的志願工程師集體開發與維護，它不僅免費提供所有人使用，也更不會因為營利考量而對保護功能打折。其預設只在你所擁有的電腦裝置裡面進行密碼管理，完全由你掌握位置。更可以確保密碼檔案不會因為保管在商業公司經營伺服器上面，而導致潛在的洩露，或是因為網路斷線而無法同步下載使用的危險。
+          </p>
+        </section>
+        <section class="right"></section>
+      </section>
+      <a id="myBtn" class="goback" href="#">返回頂部</a>
+    </main>
+  </body>
+  <script src="./app.js"></script>
+</html>
