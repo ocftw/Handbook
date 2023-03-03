@@ -200,4 +200,13 @@ a.goback {
   50% {
     border-color: orange;
   }
+}
+footer {
+  align-items: center;
+}
+footer p {
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

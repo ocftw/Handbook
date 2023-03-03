@@ -305,4 +305,15 @@ section.img img {
 }
 section.img img:first-child {
   margin-right: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+  align-items: center;
+}
+footer p {
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+  margin: 0;
 }/*# sourceMappingURL=otherPage.css.map */
