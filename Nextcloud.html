@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./picture/icon_white.png" />
+    <link rel="stylesheet" href="./style/otherPage.css" />
+    <title>推廣手冊</title>
+  </head>
+  <body>
+    <section class="backImage">
+      <a href="https://ocf.tw/"
+        ><img class="logo" src="./picture/icon_white.png" alt=""
+      /></a>
+      <div class="typewriter">
+        <h1>掌控自己雲端資料：Nextcloud</h1>
+      </div>
+    </section>
+    <main>
+      <div class="goback-div">
+        <a href="./index.html" class="backhome"> 返回主頁</a>
+      </div>
+      <section class="start">
+        <section class="left">
+          <h3 id="使用情境_Nextcloud">使用情境</h3>
+          <hr />
+          <ol>
+            <li>因為隱私或安全考量，需要嚴格掌控自己的資料位在哪裡</li>
+            <li>需要與同事在工作過程互相傳遞檔案、進行協作</li>
+            <li>
+              需要傳遞檔案給同事以外的合作夥伴，但內容及過程需要確保隱私及安全
+            </li>
+            <li>想在電腦、手機、平板之間自動同步以及管理檔案</li>
+          </ol>
+          <h3 id="使用方式_Nextcloud">使用方式</h3>
+          <hr />
+          <p>
+            Nextcloud
+            是一套開放給所有人使用的軟體，但是只有工程師才能協助進行前期的建設工作，而且組織單位還需要租賃網域、購買伺服器給
+            Nextcloud
+            使用。如果你因為前述的隱私或安全需要，本文強烈建議你商請可信任的工程師協助架設自己的網路主機系統（也就是伺服器，可參考緒論的說明），或是洽詢世界上專為公民團體服務的可靠服務商，例如
+            <a href="https://greenhost.net/products/vps/">Greenhost</a>
+            或
+            <a
+              href="https://www.greennet.org.uk/internet-services/cloud-storage"
+              >GreenNet</a
+            >
+            都有提供租賃網路主機（伺服器）給公民團體使用的服務（這個動作在英文簡稱
+            hosting，意思是託管主機給他們），並且負起保護資料不外洩的防禦功能。若你有此需求，請直接去信詢問這些單位，或商請可信任的工程師協助聯繫。
+          </p>
+          <p>
+            當你的 Nextcloud 已經架設完成之後，你就可以如同使用 Google
+            雲端硬碟那樣在自己的電腦或手機操作。 Nextcloud
+            支援跨平台使用，若你使用電腦，可以：
+          </p>
+          <ol>
+            <li>
+              直接在瀏覽器的網址列輸入已架設好的 Nextcloud
+              網址，在登入之後會發現介面與 Google
+              雲端硬碟有八成像，可以直接上手。
+              <br />
+              <img src="./picture/Nextcloud.svg" alt="" />
+              <br />
+              <img src="./picture/Nextcloud2.svg" alt="" />
+            </li>
+            <li>
+              或你希望在電腦開啟自動同步資料夾內容的功能，請在
+              <a href=" https://nextcloud.com/install/"> 官方網站</a
+              >下載安裝程式
+              。下載並安裝之後，就可以如同上一步的流程先輸入網址，再登入帳號。登入完成後，就能使用
+              Google 雲端硬碟那樣自動同步資料到電腦裡面的功能。
+            </li>
+            <img src="./picture/nextinstall.svg" alt="" />
+            <img src="./picture/nextcloudinstall.svg" alt="" />
+            <li>
+              使用蘋果的手機或平板，可以直接在 App Store 搜尋 Nextcloud
+              ，或到網址
+              <a href="https://apps.apple.com/us/app/nextcloud/id1125420102"
+                >https://apps.apple.com/us/app/nextcloud/id1125420102</a
+              >
+              。下載並安裝之後，就可以如同 1. 的流程登入雲端硬碟介面。
+            </li>
+            <li>
+              使用 android 的手機或平板，一樣在 Google Play 搜尋 Nextcloud
+              ，或到網址
+              <a
+                href="https://play.google.com/store/apps/details?id=com.nextcloud.client"
+                >https://play.google.com/store/apps/details?id=com.nextcloud.client</a
+              >
+              下載並安裝之後，就可以如同第一步的流程登入雲端硬碟介面。
+            </li>
+          </ol>
+          <h3 id="下載／安裝流程_Nextcloud">下載/安裝流程</h3>
+          <hr />
+          <p>
+            在自行架設或是委託專業人士架設 Nextcloud
+            的時候，需要準備工作的步驟有：
+          </p>
+          <ol>
+            <li>
+              自行購買電腦主機作為伺服器、或向服務商租賃網路主機。
+              <ol class="en">
+                <li>
+                  前者是最安全的做法，能夠保障自己可以完全確保檔案在地球上的位置，但是會需要電腦購買與維修費用、機房的租金等。
+                </li>
+                <li>
+                  後者則是將電腦與機房的費用外包給服務商，由他們協助管理，但這就必須要確保服務商以客戶的安全及隱私為首要目標。
+                </li>
+              </ol>
+            </li>
+            <li>
+              決定雲端硬碟的網址，如同 https://drive.google.com/ 一樣，Nextcloud
+              需要一個你自行租賃的網域作為網址，例如
+              https://nextcloud.你的組織.tw/
+              。如果你的組織已經有自己的網域，那就可以直接沿用。
+            </li>
+          </ol>
+          <p>
+            大多數的人都已經習慣使用免費的網路空間，但從來無法確保使用品質。前述的
+            Nextcloud 準備工作就如同購買 Google
+            或微軟的雲端空間一樣，都得付費才能取得有品質的保障。但是只有
+            Nextcloud
+            的過程與存放位置可以完全由使用者決定，這也是唯一能符合高度安全與隱私需要的軟體。
+          </p>
+          <p>
+            請注意：如果沒有專業團隊協助你架設和維護 Nextcloud
+            雲端硬碟，還是可以考慮 Google Drive
+            等商業雲端硬碟服務，以免因自行架設和維護的缺失導致資安漏洞。但請斟酌放置敏感資料在這類商業雲端硬碟的情況，畢竟，沒有人可以確定何時會有極權國家使用司法途徑扣押這些商業公司存放資料的辦公室、機房，以及實體硬碟。
+          </p>
+          <h3 id="技術支援／求救方法_Nextcloud">技術支援/求救方法</h3>
+          <hr />
+          <p>
+            如果對本文的介紹有任何疑義，Nextcloud 在官方網站有提供基礎的問答
+            <a href="https://help.nextcloud.com/"
+              >https://help.nextcloud.com/</a
+            >
+            但是內容以英文為主，需要使用翻譯軟體輔助。或你如果想自行架設、租賃安全的網路空間需要諮詢，可以去信詢問前文有推薦的服務商
+            <a href="https://greenhost.net/products/vps/">Greenhost</a> 或<a
+              href="https://www.greennet.org.uk/internet-services/cloud-storage"
+              >GreenNet</a
+            >
+            ，也可以聯繫
+            <a href="mailto:hi@ocf.tw">hi@ocf.tw</a> 開放文化基金會詢問。
+          </p>
+          <h3 id="結語">結語</h3>
+          <hr />
+          <p>
+            雲端硬碟大幅提升我們在協作、分享檔案的便利，將檔案上傳到雲端硬碟，也是常見的備份選項之一。但絕大多數的使用者並不能得知自己的檔案究竟儲存在哪個國家、哪個倉庫、哪一台伺服器電腦的硬碟裡面。這對於處理敏感人權議題的公民團體而言，是至關重要的議題。更何況，這些商業公司都已經是駭客的攻擊目標，常有帳號資料外洩的新聞，或是極權國家可能會直接使用司法程序扣押商業公司硬碟的可能。
+          </p>
+          <p>
+            Nextcloud
+            相對於商業雲端硬碟服務，是以開放原始碼的軟體為基礎、由志工社群自下而上開發起來的雲端硬碟服務。這不僅可以讓所有人檢視軟體運作的原始碼細節是否安全，也不會如同
+            Google、 Dropbox 或微軟需要掌握使用者的個人資訊，才可以提供服務。
+          </p>
+        </section>
+        <section class="right">
+          <ul class="right">
+            <li>
+              <a href="#掌控你在雲端的資料：Nextcloud 儲存空間"
+                >掌控你在雲端的資料：Nextcloud 儲存空間</a
+              >
+              <ul>
+                <li><a href="#使用情境_Nextcloud">使用情境</a></li>
+                <li><a href="#使用方式_Nextcloud">使用方式</a></li>
+                <li><a href="#下載／安裝流程_Nextcloud">下載/安裝流程</a></li>
+                <li>
+                  <a href="#技術支援／求救方法_Nextcloud">技術支援/求救方法</a>
+                </li>
+                <li>
+                  <a href="#結語">結語</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <a id="myBtn" class="goback" href="#">返回頂部</a>
+    </main>
+  </body>
+  <script src="./app.js"></script>
+</html>
