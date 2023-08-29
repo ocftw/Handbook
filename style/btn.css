@@ -10,8 +10,8 @@
   padding-top: calc(0.5em - 1px);
   text-align: center;
   white-space: nowrap;
-  margin-left: .25rem;
-  margin-right: .25rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
   border-radius: 10px;
 }
 .dlbtn:focus:not(:active), .dlbtn.is-focused:not(:active) {
@@ -45,6 +45,33 @@
 
 .dlbtn.is-success:active, .dlbtn.is-success.is-active {
   background-color: #3abb81;
+  border-color: transparent;
+  color: #fff;
+}
+
+.dlbtn.is-primary {
+  background-color: #4a48c7;
+  color: #fff;
+  border: 1px #ffffff solid;
+}
+
+.dlbtn.is-primary:hover, .dlbtn.is-primary.is-hovered {
+  background-color: #63006a;
+  border-color: transparent;
+  color: #fff;
+}
+
+.dlbtn.is-primary:focus, .dlbtn.is-primary.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.dlbtn.is-primary:focus:not(:active), .dlbtn.is-primary.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(97, 72, 199, 0.25);
+}
+
+.dlbtn.is-primary:active, .dlbtn.is-primary.is-active {
+  background-color: #3a47bb;
   border-color: transparent;
   color: #fff;
 }
