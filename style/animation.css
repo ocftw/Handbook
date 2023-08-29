@@ -24,7 +24,7 @@ section.animation {
   background: url("../animationImg/coffee.png");
   background-repeat: repeat-x;
   background-position: 0 130px;
-  animation: filling 4s infinite;
+  animation: filling 1.7s infinite;
   animation-iteration-count: 1;
 }
 

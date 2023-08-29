@@ -1,0 +1,50 @@
+.dlbtn {
+  font-size: 2rem;
+  line-height: 1.5;
+  border-width: 1px;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  margin-left: .25rem;
+  margin-right: .25rem;
+  border-radius: 10px;
+}
+.dlbtn:focus:not(:active), .dlbtn.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
+}
+
+.dlbtn:active, .dlbtn.is-active {
+  border-color: #4a4a4a;
+  color: #363636;
+}
+.dlbtn.is-success {
+  background-color: #48c78e;
+  color: #fff;
+  border: 1px #ffffff solid;
+}
+
+.dlbtn.is-success:hover, .dlbtn.is-success.is-hovered {
+  background-color: #006a3a;
+  border-color: transparent;
+  color: #fff;
+}
+
+.dlbtn.is-success:focus, .dlbtn.is-success.is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.dlbtn.is-success:focus:not(:active), .dlbtn.is-success.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(72, 199, 142, 0.25);
+}
+
+.dlbtn.is-success:active, .dlbtn.is-success.is-active {
+  background-color: #3abb81;
+  border-color: transparent;
+  color: #fff;
+}
