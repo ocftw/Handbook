@@ -4,8 +4,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 1400 ||
-    document.documentElement.scrollTop > 1400
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
   ) {
     document.getElementById("myBtn").style.display = "block";
   } else {

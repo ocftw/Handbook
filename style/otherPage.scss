@@ -88,6 +88,49 @@ section.right {
 
 section.left {
   flex: 4 1 500px;
+
+  table {
+    width: 100%;
+    img {
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 1045px) {
+    flex: 2 1 300px;
+
+    img {
+      max-width: 70%;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+
+      img {
+        margin: auto;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    section.left {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+
+      img {
+        margin: auto;
+      }
+    }
+  }
 }
 section.right {
   display: flex;
@@ -95,6 +138,10 @@ section.right {
   align-items: center;
   flex: 1 1 350px;
   height: 200px;
+
+  @media (max-width: 1045px) {
+    display: none;
+  }
 }
 
 table,
@@ -131,6 +178,21 @@ table {
       ul {
         text-align: left;
       }
+    }
+  }
+}
+
+table.table_group2 {
+  td {
+    text-align: left;
+  }
+
+  @media (max-width: 660px) {
+    td {
+      text-align: center;
+    }
+    img {
+      display: block;
     }
   }
 }
@@ -201,19 +263,40 @@ a.btn {
 }
 
 a.goback {
-  text-transform: uppercase;
   text-decoration: none;
-  padding: 0.5rem;
-  display: inline-block;
-  border-radius: 10rem;
+  border-radius: 50px;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  font-size: 1.6rem;
+  bottom: 1rem;
+  right: 1rem;
   border: none;
   cursor: pointer;
-  background-color: #fff;
-  color: #777;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    img {
+      height: 40px;
+      width: 40px;
+      opacity: 0.5;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    bottom: 3rem;
+    right: 3rem;
+  }
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    img {
+      opacity: 1;
+    }
+  }
 }
 
 a.btn:hover {
@@ -239,19 +322,27 @@ a.btn:hover {
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   //animation-iteration-count: infinite;
+
+  @media (max-width: 1024px) {
+    font-size: 8vmin;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 6vmin;
+  }
 }
-.typewriter h1:nth-child(2) {
-  color: #000000;
-  font-family: monospace;
-  font-size: 3rem;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 7s steps(30, end), blink-caret 0.5s step-end infinite;
-  animation-delay: 5s;
-}
+// .typewriter h1:nth-child(2) {
+//   color: #000000;
+//   font-family: monospace;
+//   font-size: 3rem;
+//   overflow: hidden; /* Ensures the content is not revealed until the animation */
+//   border-right: 0.15em solid orange; /* The typwriter cursor */
+//   white-space: nowrap; /* Keeps the content on a single line */
+//   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//   letter-spacing: 0.15em; /* Adjust as needed */
+//   animation: typing 7s steps(30, end), blink-caret 0.5s step-end infinite;
+//   animation-delay: 5s;
+// }
 
 /* The typing effect */
 @keyframes typing {
@@ -275,19 +366,20 @@ a.btn:hover {
 }
 
 .backhome {
-  color: #000000;
   background-color: #fff;
-  padding: 0.5rem;
-  width: 5rem;
-  font-size: 1rem;
-  border-radius: 10rem;
+  // padding: 2rem;
+  width: 56px;
+  height: 56px;
+  background-image: url(../img/icon_home_white.svg);
+  border-radius: 3rem;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  background-position: center;
 }
-.backhome:visited {
-  color: #000000;
-}
+
 .backhome:hover {
-  color: #ffffff;
-  background-color: #000000;
+  background-color: #8d8d8dad;
+  background-image: url(../img/icon_home_black.svg);
 }
 
 ul.left,
@@ -329,4 +421,66 @@ footer {
     text-align: center;
     margin: 0;
   }
+}
+
+button,
+[role="button"] {
+  -webkit-appearance: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  height: 45px;
+  background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+  border-radius: 30px;
+  border: 1px solid #8f9092;
+  // box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+  //   0 -6px 4px #fefefe, inset 0 0 3px 0 #cecfd1;
+  transition: all 0.2s ease;
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  & > * {
+    transition: transform 0.2s ease;
+  }
+  &:hover:not([disabled]) {
+    box-shadow: 0 4px 3px 1px rgba(225, 216, 204, 0.4), 0 6px 8px #d6d7d9,
+      0 -4px 4px #cecfd1, 0 -6px 4px rgba(225, 216, 204, 0.4),
+      inset 0 0 3px 3px #cecfd1;
+    // box-shadow: inset 0 0 3px 3px #cecfd1;
+  }
+  & > * {
+    transform: scale(0.975);
+  }
+  &:focus:not(:active) {
+    animation: active 0.9s alternate infinite;
+    outline: none;
+  }
+  &:active:not([disabled]) {
+    box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+      0 -6px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+  }
+  & > * {
+    transform: scale(0.95);
+  }
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  &.icon {
+    width: 45px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+div.top_tittle {
+  display: flex;
+  align-items: center;
 }

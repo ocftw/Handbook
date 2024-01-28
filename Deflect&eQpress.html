@@ -14,16 +14,20 @@
         ><img class="logo" src="./picture/icon_white.png" alt=""
       /></a>
       <div class="typewriter">
-        <h1>保障你的網路安全：Deflect & eQpress</h1>
+        <h1>Deflect & eQpress</h1>
       </div>
     </section>
     <main>
-      <div class="goback-div">
-        <a href="./index.html" class="backhome"> 返回主頁</a>
-      </div>
       <section class="start">
         <section class="left">
-          <h3 id="使用情境_Deflect">使用情境</h3>
+          <div class="top_tittle">
+            <a href="./index.html" style="width: fit-content">
+              <div class="button icon" role="button">
+                <img src="./img/icon_home_white.svg" alt="" />
+              </div>
+            </a>
+            <h3 id="使用情境_Deflect">使用情境</h3>
+          </div>
           <hr />
           <ol>
             <li>
@@ -245,7 +249,11 @@
           </ul>
         </section>
       </section>
-      <a id="myBtn" class="goback" href="#">返回頂部</a>
+      <a id="myBtn" class="goback" href="#">
+        <div>
+          <img src="./img/arrow_up.svg" alt="" />
+        </div>
+      </a>
     </main>
     <footer>
       <p>
@@ -260,12 +268,17 @@
     </footer>
   </body>
   <script src="./app.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3DG2E5E3W"></script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-X3DG2E5E3W"
+  ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-X3DG2E5E3W');
-    gtag('event', 'page_view', { 'send_to': 'G-X3DG2E5E3W' });
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-X3DG2E5E3W");
+    gtag("event", "page_view", { send_to: "G-X3DG2E5E3W" });
   </script>
 </html>
