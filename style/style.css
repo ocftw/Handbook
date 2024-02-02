@@ -181,6 +181,17 @@ a.goback {
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   animation-delay: 4s;
+  word-wrap: break-word;
+}
+@media (max-width: 1024px) {
+  .typewriter h1 {
+    font-size: 8vmin;
+  }
+}
+@media (max-width: 500px) {
+  .typewriter h1 {
+    font-size: 6vmin;
+  }
 }
 
 /* The typing effect */

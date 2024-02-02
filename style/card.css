@@ -454,11 +454,15 @@ body {
   }
 }
 
-.row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 4);
-}
 .row .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
+}
+
+@media only screen and (max-width: 1200px) {
+  .row .col-1-of-4 {
+    width: calc((100% - 2 * 6rem) / 2);
+    margin: 1rem;
+  }
 }
 
 .card-box {
@@ -467,7 +471,7 @@ body {
   padding: 2rem;
   text-align: center;
   border-radius: 3px;
-  height: 65vh;
+  height: 45vh;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   -webkit-transition: -webkit-transform 0.3s;
