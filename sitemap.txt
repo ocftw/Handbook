@@ -1,0 +1,5 @@
+https://digitalsecurityhandbook.ocf.tw/index.html
+https://digitalsecurityhandbook.ocf.tw/browser.html
+https://digitalsecurityhandbook.ocf.tw/KeePassXC.html
+https://digitalsecurityhandbook.ocf.tw/Nextcloud.html
+https://digitalsecurityhandbook.ocf.tw/Deflect&eQpress.html
