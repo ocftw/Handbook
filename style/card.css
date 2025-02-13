@@ -188,6 +188,29 @@ body {
   );
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
+
+.card__side--back-4 {
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#8e44ad),
+    to(#9b59b6)
+  );
+  background-image: linear-gradient(to right bottom, #8e44ad, #9b59b6);
+}
+.card__side--back-5 {
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#e74c3c),
+    to(#c0392b)
+  );
+  background-image: linear-gradient(to right bottom, #e74c3c, #c0392b);
+}
+
+
 .card:hover .card__side--front {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
@@ -253,6 +276,28 @@ body {
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
     url(../img/Deflect_icon_1.png);
 }
+
+.card__picture--4 {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#8e44ad),
+    to(#9b59b6)
+  );
+  
+}
+.card__picture--5 {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#e74c3c),
+    to(#c0392b)
+  );
+
+}
+
 .card__heading {
   font-size: 2.8rem;
   font-weight: 300;
@@ -327,6 +372,21 @@ body {
     rgba(86, 67, 250, 0.85)
   );
 }
+.card__heading-span--4 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(142, 68, 173, 0.85),
+    rgba(155, 89, 182, 0.85)
+  );
+}
+.card__heading-span--5 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(231, 76, 60, 0.85),
+    rgba(192, 57, 43, 0.85)
+  );
+}
+
 .card__details {
   padding: 3rem;
 }
@@ -454,8 +514,8 @@ body {
   }
 }
 
-.row .col-1-of-4 {
-  width: calc((100% - 3 * 6rem) / 4);
+.row .col-1-of-6 {
+  width: calc((100% - 3 * 6rem) / 6);
 }
 
 @media only screen and (max-width: 1200px) {
