@@ -528,12 +528,12 @@ body {
   }
 }
 
-.row .col-1-of-7 {
+.row .col-1-of-6 {
   width: calc((100% - 3 * 6rem) / 7);
 }
 
 @media only screen and (max-width: 1200px) {
-  .row .col-1-of-7 {
+  .row .col-1-of-6 {
     width: calc((100% - 2 * 6rem) / 2);
     margin: 1rem;
   }
