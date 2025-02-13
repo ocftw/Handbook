@@ -373,6 +373,13 @@ body {
   );
 }
 .card__heading-span--4 {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(142, 68, 173, 0.85)),
+    to(rgba(155, 89, 182, 0.85))
+  );  
   background-image: linear-gradient(
     to right bottom,
     rgba(142, 68, 173, 0.85),
@@ -380,6 +387,13 @@ body {
   );
 }
 .card__heading-span--5 {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(231, 76, 60, 0.85)),
+    to(rgba(192,57, 43, 0.85))
+  );
   background-image: linear-gradient(
     to right bottom,
     rgba(231, 76, 60, 0.85),
