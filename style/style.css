@@ -124,6 +124,11 @@ ol li {
   margin: 1rem;
 }
 
+ol li,
+ul li {
+  margin: 1rem;
+}
+
 ol.en {
   list-style-type: lower-latin;
 }
